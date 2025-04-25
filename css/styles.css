@@ -1,0 +1,770 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+ :root {
+     --primary_color: #e74c3c;
+     --white_color: #fff;
+     --ubuntu: "ubuntu";
+     --righteous: "Righteous";
+     --box_shadow: 10px 10px 5px rgba(0, 0, 0, .3);
+ }
+
+
+ html {
+     font-size: 70%;
+ }
+
+
+
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     font-family: "poppins";
+ }
+
+ /*----- Utilty class start ----- */
+ a {
+     text-decoration: none;
+ }
+
+ .container {
+     max-width: 1440px;
+     margin: 0 auto;
+     padding: 0 80px;
+ }
+
+ .main_heading {
+     font-size: 4rem;
+     font-family: var(--righteous);
+     text-align: center;
+     color: var(--white_color);
+
+ }
+
+ .main_heading-1 {
+     font-size: 4rem;
+     font-family: var(--righteous);
+     text-align: center;
+     color: #000;
+ }
+
+ .normal_heading {
+     font-size: 2rem;
+     font-family: var(--righteous);
+     color: var(--white_color);
+     text-align: center;
+
+ }
+
+
+ .normal_heading-1 {
+     font-size: 2rem;
+     font-family: var(--righteous);
+     color: var(--primary_color);
+     text-align: center;
+
+ }
+
+ /*----- Utilty class end ----- */
+
+
+
+
+ /*----- header start ----- */
+ header {
+     width: 100%;
+     background-color: rgba(0, 0, 0, 0.6);
+     position: fixed;
+     height: 10vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 1.5rem 0;
+     z-index: 100;
+     transition: all 0.5s ease-in-out;
+
+
+ }
+
+ header.sticky {
+     background: #000;
+ }
+
+
+ .logo img {
+     display: block;
+     object-fit: cover;
+     width: 17%;
+     position: relative;
+
+ }
+
+ .navbar {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+
+ .btn {
+     font-size: 2.2rem;
+     color: var(--white_color);
+     cursor: pointer;
+     margin-left: 3vw;
+     display: none;
+ }
+
+ .navbar nav {
+     display: flex;
+     align-items: center;
+ }
+
+ .navbar nav li {
+     list-style-type: none;
+     margin: 0 1rem;
+ }
+
+ .navbar nav li a {
+     font-size: 1.3rem;
+     color: var(--white_color);
+     position: relative;
+ }
+
+ .navbar nav li a::after {
+     content: "";
+     position: absolute;
+     height: 3px;
+     background: var(--primary_color);
+     width: 0;
+     left: 0;
+     top: 30px;
+     transition: all 0.3s ease-in-out;
+ }
+
+ .navbar nav li a:hover:after {
+     width: 100%;
+ }
+
+ /*----- header end ----- */
+
+ /*--  --------showcase start----------   --*/
+
+ #showcase {
+     background: url(../imgs/foods.jpg) no-repeat center center/cover;
+     width: 100%;
+     min-height: 100vh;
+     /* height: 100vh; */
+
+     z-index: -10;
+     position: relative;
+     padding-top: 10vh;
+
+     /* display: flex; */
+
+ }
+
+ #showcase::before {
+     content: "";
+     background-color: rgba(0, 0, 0, 0.6);
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: -11;
+ }
+
+ #showcase .contents {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     min-width: 100%;
+     position: relative;
+     padding-top: 100px;
+ }
+
+
+ #showcase .contents img {
+     width: 17%;
+     margin-left: 0;
+     height: 50%;
+ }
+
+
+ #showcase .contents h2 {
+     font-size: 7rem;
+     font-family: var(--righteous);
+     color: var(--white_color);
+     text-align: center;
+     letter-spacing: 2px;
+ }
+
+
+ #showcase .contents h3 {
+     font-size: 3rem;
+     font-family: var(--righteous);
+     color: var(--white_color);
+     text-align: center;
+     letter-spacing: 2px;
+ }
+
+
+ /*--  --------showcase end----------   --*/
+
+
+ /*--  --------special offer start----------   --*/
+
+ #sp_offer {
+     padding: 10rem 0;
+ }
+
+ .sp_content {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     width: 100%;
+     grid-gap: 4rem;
+     /* display: none; */
+ }
+
+ .sp_content img {
+     width: 10vw;
+     height: 15vh;
+ }
+
+ #right {
+     width: 100%;
+     height: 100%;
+     /* object-fit: cover; */
+ }
+
+ .headigs h2 {
+     font-size: 4rem;
+     font-family: var(--righteous);
+ }
+
+
+ .headigs h3 {
+     font-size: 2rem;
+     font-family: var(--ubuntu);
+     color: var(--primary_color);
+ }
+
+
+
+ .imgs-content {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 3rem 0;
+ }
+
+ .imgs {
+     display: flex;
+     align-items: center;
+ }
+
+ imgs img {
+     display: block;
+     object-fit: cover;
+     /* width: 50%; */
+ }
+
+ .content_for_img {
+     padding-left: 3rem;
+ }
+
+ .content_for_img h4 {
+     font-size: 2rem;
+     padding-block-end: 0.5rem;
+     font-family: var(--ubuntu);
+ }
+
+ .imgs-content .price {
+     font-size: 3rem;
+     font-family: var(--righteous);
+     border: 1px solid #ddd;
+     padding: 1rem;
+     border-radius: 50%;
+
+ }
+
+
+
+ .right_side_content {
+     position: relative;
+     display: block;
+     width: 100%;
+     object-fit: cover;
+     margin-left: auto;
+ }
+
+
+ .img_right_side .over_img {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     padding: 4rem;
+     background: var(--primary_color);
+     color: var(--white_color);
+     text-align: center;
+     border-radius: 50%;
+ }
+
+ .over_img h2 {
+     font-size: 2rem;
+ }
+
+
+ .over_img a {
+     color: var(--white_color);
+ }
+
+
+
+ /*--  --------special offer close----------   --*/
+
+
+ /*--  --------reservation now start----------   --*/
+ #reservation_tbl {
+     background: url("/imgs/05.png") no-repeat center center/cover;
+     background-attachment: fixed;
+     padding: 6rem 0;
+ }
+
+
+ #reservation_tbl .form_data {
+     background: var(--primary_color);
+     padding: 4rem;
+     margin-left: 3rem;
+     width: 50%;
+     color: var(--white_color);
+ }
+
+ .form_data form {
+     padding: 4rem 0;
+
+ }
+
+ .form_data form input {
+     width: 49.5%;
+     padding: 0.7rem 0.4rem;
+     margin-bottom: 1rem;
+     border: none;
+     border-radius: 4px;
+ }
+
+
+ .form_data form textarea {
+     width: 100%;
+     padding: 1rem 0.4rem;
+ }
+
+ .form_data form button {
+     display: inline-block;
+     width: 100%;
+     border: none;
+     padding: 0.9rem 0;
+     margin-top: 2rem;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: all 0.5s ease-in-out;
+
+
+ }
+
+ .form_data form button:hover {
+     background: #ccc;
+ }
+
+ #deal_today {
+     padding: 5rem 0rem;
+     margin: 4rem 0rem;
+ }
+
+ #deal_today .card-content {
+     text-align: center;
+     font-size: 1.2rem;
+ }
+
+ /* #deal_today {
+     margin: 6rem 0;
+ } */
+
+ #deal_today img {
+
+     width: 50%;
+     min-height: 40%;
+ }
+
+ .cards h4 {
+     font-family: var(--ubuntu);
+     font-size: 2rem;
+     /* padding-top: 2rem; */
+
+ }
+
+
+ .price {
+     font-size: 2rem;
+     color: var(--primary_color);
+     font-weight: 600;
+     padding-bottom: 3rem;
+ }
+
+
+
+ /*--  --------reservation now close----------   --*/
+
+
+ /*--  --------Food lover Start----------   --*/
+ #food_lover {
+     padding: 5rem 0;
+     background: #f4f4f4;
+
+ }
+
+
+ .food_lover_container {
+     margin: 3rem 0;
+     width: 100%;
+ }
+
+
+ .food_lover_container .btn_container {
+     margin: 2rem 0;
+     width: 100%;
+     display: block;
+     color: #000;
+     text-align: center;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .btn_container .btn-cat {
+     padding: 0.7rem 1.2rem;
+     cursor: pointer;
+     margin: 3rem 2rem;
+     border: 1px solid #ddd;
+     font-size: 1.4rem;
+     border-radius: 5px;
+     transition: all 0.5s ease-in-out;
+
+
+ }
+
+ .btn-cat:hover {
+     background-color: var(--primary_color);
+     color: var(--white_color);
+ }
+
+ .menues_items_container {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 3rem;
+     justify-content: center;
+
+ }
+
+ .menues_items_container .img_cards {
+     border: 1px solid #ddd;
+     box-shadow: var(--box_shadow);
+     width: 30vw;
+
+ }
+
+
+ .img_cards img {
+     display: block;
+     width: 30vw;
+     transition: all 0.3s ease-in-out;
+     object-fit: cover;
+     margin-bottom: 2rem;
+     cursor: pointer;
+ }
+
+ .img_cards p {
+     text-align: center;
+     font-size: 1.5rem;
+     margin-bottom: 1.5rem;
+     font-family: var(--ubuntu);
+ }
+
+ .img_cards .pricee {
+     color: var(--primary_color);
+     font-size: 1.8rem;
+ }
+
+
+ .img_cards img:hover {
+     transform: scale(1.1);
+ }
+
+
+ /*--  --------Food lover close----------   --*/
+
+ /*-- -------- Customer Review Start ---------- --*/
+ #customer_feedback {
+     padding: 10rem 0;
+     background: url("/imgs/13.jpg") no-repeat center center/cover;
+     background-attachment: fixed;
+     position: relative;
+     /* z-index: -1; */
+ }
+
+
+ #customer_feedback ::after {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     /* z-index: -2; */
+     background-color: rgba(0, 0, 0, 0.03);
+ }
+
+ .coustemr_card img {
+     height: 40%;
+     width: 40%;
+     display: block;
+     object-fit: contain;
+     border-radius: 50%;
+     margin: auto;
+ }
+
+ .customer_card_container {
+     margin: 4rem 0;
+     z-index: 115;
+ }
+
+ .coustemr_card {
+     background: #fcfcfc;
+     text-align: center;
+     padding: 3rem;
+     box-shadow: var(--box_shadow);
+
+
+ }
+
+ .coustemr_card p {
+     font-size: 1.2rem;
+     text-align: justify;
+     padding: 2rem 0;
+
+ }
+
+ .coustemr_card .name {
+     text-align: center;
+     font-size: 1.5rem;
+     color: var(--primary_color);
+ }
+
+ /*-- --------  Customer Review End  ---------- --*/
+
+ /*-- --------  Up comming Event  ---------- --*/
+ #up_coming_events {
+     /* background: url('../imgs/14.webp') no-repeat; */
+     padding: 10rem 0;
+ }
+
+ .events_card_container {
+     margin: 6rem 0;
+
+
+ }
+
+ .events_card {
+     border: 1px solid red;
+     box-shadow: var(--box_shadow);
+ }
+
+ .events_card img {
+     display: inline-block;
+     object-fit: cover;
+     width: 100%;
+     height: 50vh;
+
+
+ }
+
+ .event_content {
+     padding: 2rem;
+     text-align: justify;
+     justify-content: center;
+ }
+
+
+ .event_content p {
+     font-size: 1.2rem;
+     text-align: justify;
+     padding: 1.8rem 0;
+ }
+
+ .event_content a {
+     text-transform: uppercase;
+     font-size: 1.3rem;
+     color: var(--primary_color);
+     margin: 0 0;
+ }
+
+ /*-- -------- Up comming Close ---------- --*/
+
+ /*-- -------- Static counter Strat ---------- --*/
+
+ #static_counter {
+     background: url('../imgs/15.png')no-repeat center center/cover;
+     padding: 10rem 0;
+     position: relative;
+     z-index: -1;
+ }
+
+
+ #static_counter::after {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: -1;
+     background-color: rgba(0, 0, 0, 0.7);
+ }
+
+ .counters {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     text-align: center;
+     color: var(--white_color);
+     gap: 2rem;
+ }
+
+ .counter {
+     border: 1px solid var(--white_color);
+     padding: 2rem;
+     color: var(--primary_color);
+     border-radius: 5px;
+
+ }
+
+ .num {
+     font-size: 8rem;
+     font-family: var(--righteous);
+ }
+
+ .counter h2 {
+     font-size: 2rem;
+     font-family: var(--ubuntu);
+     color: var(--white_color);
+ }
+
+ /*-- -------- Static counter Close ---------- --*/
+
+
+
+ /*-- -------- Chef Start ---------- --*/
+
+ #chef {
+     padding: 10rem 0;
+ }
+
+ .chef_container {
+     margin: 4rem 0;
+     text-align: center;
+ }
+
+ .chef_cards img {
+     height: 50vh;
+ }
+
+ .chef_cards {
+     border: 1px solid #4b1b1b;
+ }
+
+ .chef_content {
+     padding: 2rem 0;
+ }
+
+ .position {
+     font-size: 1.5rem;
+     color: var(--primary_color);
+ }
+
+
+ .social_icons {
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     width: 100%;
+     padding: 2rem 0;
+
+ }
+
+ .social_icons i {
+     cursor: pointer;
+ }
+
+ /*-- -------- Chef Close ---------- --*/
+
+
+ /*-- -------- Footer Start ---------- --*/
+ #footer {
+     background: #212121;
+     padding: 4rem 0;
+     color: var(--white_color);
+     font-size: 1.3rem;
+ }
+
+ .about_us img {
+     height: 40%;
+     width: 50%;
+     display: block;
+     object-fit: cover;
+ }
+
+ .footer_container {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 2rem;
+ }
+
+ .about_us p {
+     line-height: 1.8;
+     padding-bottom: 2rem;
+ }
+
+ .about_us a {
+     color: var(--primary_color);
+ }
+
+ .footer_container h2 {
+     padding-bottom: 3rem;
+     color: var(--primary_color);
+ }
+
+ .opening_hours {
+     line-height: 1.8;
+ }
+
+ .opening_hours .day,
+ .email,
+ .add {
+     color: var(--primary_color);
+ }
+
+ .opening_hours .day span {
+     color: var(--white_color);
+
+ }
+
+ /*-- -------- Footer Close ---------- --*/
+
+ footer {
+     background: #171717;
+     text-align: center;
+     padding: 2rem 0;
+     font-size: 1.4 rem;
+     color: var(--white_color);
+ }

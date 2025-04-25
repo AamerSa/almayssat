@@ -1,0 +1,221 @@
+/* large screen size */
+
+@media(max-width : 1070px) {
+    html {
+        font-size: 60%;
+    }
+
+    ;
+
+    .container {
+        padding: 0 60px;
+    }
+
+
+    .form_data {
+
+        width: 70%;
+
+    }
+
+
+
+}
+
+
+@media(max-width : 900px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .container {
+        padding: 0 40px;
+    }
+
+    .btn {
+
+        display: block;
+    }
+
+    .navbar nav {
+        flex-direction: column;
+        position: fixed;
+        min-width: 100%;
+        min-height: 60vh;
+        top: 0;
+        right: 100%;
+        background: #000;
+        align-items: flex-start;
+        justify-content: center;
+        transition: all 0.5s ease-in-out;
+    }
+
+    nav.active {
+        right: 0;
+        transition: all 0.7s ease-in;
+    }
+
+    .navbar nav li a {
+        font-size: 1.4rem;
+        color: var(--white_color);
+        position: relative;
+
+    }
+
+    .navbar nav li {
+        list-style-type: none;
+        margin: 2rem 4rem;
+
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 0;
+        left: 90%;
+        margin: 25px;
+
+    }
+}
+
+/* @media(max-width : 660px) {
+    html {
+        font-size: 40%;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .btn {
+
+        display: block;
+    }
+
+    .navbar nav {
+        flex-direction: column;
+        position: fixed;
+        min-width: 100%;
+        min-height: 60vh;
+        top: 0;
+        right: 100%;
+        background: #000;
+        align-items: flex-start;
+        justify-content: center;
+        transition: all 0.5s ease-in-out;
+    }
+
+    nav.active {
+        right: 0;
+        transition: all 0.7s ease-in;
+    }
+
+    .navbar nav li a {
+        font-size: 1.4rem;
+        color: var(--white_color);
+        position: relative;
+
+    }
+
+    .navbar nav li {
+        list-style-type: none;
+        margin: 1rem 2rem;
+
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 0;
+        left: 80%;
+        margin: 25px;
+
+    }
+
+
+} */
+
+
+/* 768px */
+
+@media(max-width:768px) {
+    .sp_content {
+
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+
+    .form_data {
+
+        width: 100%;
+
+    }
+
+
+
+    .form_data form input {
+        width: 100%;
+
+    }
+
+    .main_heading {
+        font-size: 3rem;
+        font-family: var(--righteous);
+    }
+
+    /* food lover start */
+    .menues_items_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .btn_container .btn-cat {
+
+        margin: 1rem 1rem;
+
+
+
+    }
+
+    /* food lover close */
+
+    /* static counter start */
+    .counters {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .footer_container {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    /* static counter close */
+}
+
+@media(max-width:420px) {
+
+    /* food lover start */
+    .menues_items_container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* food lover close */
+
+    /* static counter start */
+    .counters {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+
+    .footer_container {
+
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    /* static counter close */
+
+}
