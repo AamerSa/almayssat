@@ -329,7 +329,7 @@
 
  /*--  --------reservation now start----------   --*/
  #reservation_tbl {
-     background: url("/imgs/05.png") no-repeat center center/cover;
+     background: url(../imgs/05.png) no-repeat center center/cover;
      background-attachment: fixed;
      padding: 6rem 0;
  }
@@ -508,7 +508,7 @@
  /*-- -------- Customer Review Start ---------- --*/
  #customer_feedback {
      padding: 10rem 0;
-     background: url("/imgs/13.jpg") no-repeat center center/cover;
+     background: url(../imgs/13.jpg) no-repeat center center/cover;
      background-attachment: fixed;
      position: relative;
      /* z-index: -1; */
@@ -615,7 +615,7 @@
  /*-- -------- Static counter Strat ---------- --*/
 
  #static_counter {
-     background: url('../imgs/15.png')no-repeat center center/cover;
+     background: url(../imgs/15.png)no-repeat center center/cover;
      padding: 10rem 0;
      position: relative;
      z-index: -1;
